@@ -1,5 +1,5 @@
 #This will be a citation generator
-#TESTESTEST
+
 import tkinter as tk
 
 mw = tk.Tk()
@@ -15,20 +15,28 @@ def OpenNewWindow_op1(): #Opens a new window for MLA9
     nw1.geometry('400x400')
     tk.Label(nw1, text="Please input all the information known below!").pack()
     tk.Label(nw1, text="First name")
-    firstname_1 = tk.entry()
 
 def OpenNewWindow_op2(): #Opens a new window for APA7
     nw2 = tk.Toplevel(mw)
     nw2.title("APA7 Citation Generator")
     nw2.geometry('400x400')
     tk.Label(nw2, text="Please input all the information known below!").pack()
-    tk.Label(nw2)
+
 
 def OpenNewWindow_op3(): #Opens a new window for Chicago style
     nw3 = tk.Toplevel(mw)
     nw3.title("CHICAGO Citation Generator")
     nw3.geometry('400x400')
     tk.Label(nw3, text="Please input all the information known below!").pack()
+
+def MLA9_Variables():
+    Firstname1 = fn1.get(nw1)
+    Lastname1 = ln1.get(nw1)
+    ArticleTitle1 = at1.get(nw1)
+    WebsiteTitle1 = wt1.get(nw1)
+    Publisher1 = pub1.get(nw1)
+    Date1 = date1.get(nw1) #In the form of Day, month, year
+    URL1 = url1.get(nw1)
 
 
 op1 = tk.Button(mw, text='MLA9', command=OpenNewWindow_op1)
