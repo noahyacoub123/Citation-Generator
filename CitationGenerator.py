@@ -31,8 +31,8 @@ def OpenNewWindow_op3(): #Opens a new window for Chicago style
 
 def SeeCitations():  # Opens a new window for viewing the citations
     nw4 = tk.Toplevel(mw)
-    nw3.title("Citation Viewer")
-    nw3.geometry('400x400')
+    nw4.title("Citation Viewer")
+    nw4.geometry('400x400')
     #If (no citations)
         #tk.label("No citations so far!")
     #else:
@@ -57,5 +57,8 @@ op2.grid(row = 2, column = 0, padx = 5, pady=5)
 
 op3 = tk.Button(mw, text='CHICAGO', command=OpenNewWindow_op3)
 op3.grid(row = 3, column = 0, padx = 5, pady=5)
+
+op4 = tk.Button(mw, text='Citation Viewer', command=SeeCitations)
+op4.grid(row = 3, column = 0, padx = 5, pady = 5)
 
 mw.mainloop()
