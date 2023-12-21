@@ -10,7 +10,7 @@ greeting.grid(row = 0)
 
 
 def OpenNewWindow_op1(): #Opens a new window for MLA9
-    nw1 = tk.Toplevel(mw)
+    nw1 = tk.Toplevel(mw) #Where nw means "new window"
     nw1.title("MLA9 Citation Generator")
     nw1.geometry('400x400')
     tk.Label(nw1, text="Please input all the information known below!").pack()
@@ -28,6 +28,16 @@ def OpenNewWindow_op3(): #Opens a new window for Chicago style
     nw3.title("CHICAGO Citation Generator")
     nw3.geometry('400x400')
     tk.Label(nw3, text="Please input all the information known below!").pack()
+
+def SeeCitations():  # Opens a new window for viewing the citations
+    nw4 = tk.Toplevel(mw)
+    nw3.title("Citation Viewer")
+    nw3.geometry('400x400')
+    #If (no citations)
+        #tk.label("No citations so far!")
+    #else:
+        #display citations
+
 
 def MLA9_Variables():
     Firstname1 = fn1.get(nw1)
